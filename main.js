@@ -1,4 +1,3 @@
-
         document.addEventListener("DOMContentLoaded", function () {
             const canvas = document.getElementById("arrowCanvas");
             const ctx = canvas.getContext("2d");
@@ -44,3 +43,10 @@
 
             canvas.addEventListener("mousemove", updateArrow);
         });
+
+var slider = document.getElementbyID("myRange");
+var label = document.getElementbyID("rangeLabel");
+output.innerHTML = slider.value;
+slider.oninput = function() {
+    output.innerHTML = this.value;
+};
