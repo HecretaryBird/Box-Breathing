@@ -44,8 +44,8 @@
             canvas.addEventListener("mousemove", updateArrow);
         });
 
-var slider = document.getElementbyID("myRange");
-var label = document.getElementbyID("rangeLabel");
+var slider = document.getElementByID("myRange");
+var label = document.getElementByID("rangeLabel");
 label.innerHTML = slider.value;
 slider.oninput = function() {
     label.innerHTML = this.value;
