@@ -12,7 +12,7 @@
     const breatheOutValue = document.getElementById('breatheOutValue');
     const hold2Value = document.getElementById('hold2Value');
 
-    function drawRectangle() {
+    function drawRectangle() { //change this
       const width = parseInt(breatheInSlider.value);
       const height = parseInt(breatheOutSlider.value);
 
@@ -23,7 +23,9 @@
       heightValue.textContent = height;
     }
 
-    widthSlider.addEventListener('input', drawRectangle);
-    heightSlider.addEventListener('input', drawRectangle);
+    breatheInSlider.addEventListener('input', drawRectangle);
+    hold1Slider.addEventListener('input', drawRectangle);
+    breatheOutSlider.addEventListener('input', drawRectangle);
+    hold2Slider.addEventListener('input', drawRectangle);
 
     drawRectangle(); // Initial draw
